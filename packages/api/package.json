@@ -1,0 +1,30 @@
+{
+  "name": "@taskbounty/api",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "lint": "eslint .",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ts-rest/core": "^3.30.5",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.53.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.2.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@taskbounty-app/eslint-config/base"
+    ]
+  },
+  "prettier": "@taskbounty/prettier-config"
+}
