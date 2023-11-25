@@ -1,18 +1,16 @@
+import { TsRestService } from "@/ts-rest/services/ts-rest/ts-rest.service";
 import { Controller } from "@nestjs/common";
 import { TsRestHandler, tsRestHandler } from "@ts-rest/nest";
 
 import { contract as c } from "@taskbounty-app/api/contract";
 
-@Controller("")
-export class TsRestController {
-  constructor(private readonly service: Service) {}
+@Controller("notes")
+export class NoteController {
+  constructor(private readonly service: TsRestService) {}
 
   @TsRestHandler(c.getPosts)
   async getPosts() {
-    return tsRestHandler(c.getPosts, async () => {
-      const posts = await this.service.getPosts();
-
-      return { status: 200, body: posts };
-    });
+    const allPosts = await this.service.getAll();
+    return { posts: allPosts };
   }
 }

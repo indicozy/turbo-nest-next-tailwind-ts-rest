@@ -18,6 +18,9 @@
     "allowSyntheticDefaultImports": true,
     "target": "es2017",
     "sourceMap": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   }
 }

@@ -25,13 +25,14 @@
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/swagger": "^7.1.16",
-    "@paralleldrive/cuid2": "^2.2.2",
     "@planetscale/database": "^1.11.0",
     "@t3-oss/env-core": "^0.7.1",
     "@taskbounty-app/api": "workspace:^0.1.0",
+    "@taskbounty-app/db": "workspace:^0.1.0",
     "@ts-rest/nest": "^3.30.5",
     "better-sqlite3": "^9.1.1",
     "drizzle-orm": "^0.29.0",
+    "mysql2": "^3.6.5",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
     "zod": "^3.22.4"
@@ -86,5 +87,8 @@
       "@taskbounty-app/eslint-config/nest"
     ]
   },
-  "prettier": "@taskbounty-app/prettier-config"
+  "prettier": "@taskbounty-app/prettier-config",
+  "moduleNameMapper": {
+    "^@/(.*)$": "<rootDir>/$1"
+  }
 }
