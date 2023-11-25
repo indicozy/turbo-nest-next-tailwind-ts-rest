@@ -2,7 +2,7 @@
 Made by https://www.tomray.dev/nestjs-nextjs-trpc#monorepo-config-updates-and-dx-tips
 # Documentation
 TODO:
-- [x] OpenAPI integraion
+- [ ] OpenAPI integraion
 - [x] API integration
     - [x] Front
     - [x] Back
@@ -12,11 +12,15 @@ TODO:
 - [ ] Deploy
 - [] JSON query params for front and back https://ts-rest.com/docs/next#json-query-parameters 
 - [ ] Update all packages
-- [ ] refactor Nest
-- [ ] refactor Next to FSD filesystem
 - [ ] Clerk integrations
-- [ ] Split dotenv to apps?
 - [ ] Github actions CI/CD
+
+- [ ] refactor Next to FSD filesystem
+- [ ] refactor Nest
+    - [ ] Multi-handler?
+## For future release
+- [ ] Multiple domains for ClerK? https://clerk.com/docs/advanced-usage/satellite-domains
+- [ ] For future release: megarepo?
 
 
 # What's included
@@ -54,3 +58,4 @@ TODO:
     - ASDF NodeJS
     - Easy deploy to Railways
     - Github Actions CI/CD
+    - Dotenv from T3 community
