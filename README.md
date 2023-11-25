@@ -2,9 +2,13 @@
 Made by https://www.tomray.dev/nestjs-nextjs-trpc#monorepo-config-updates-and-dx-tips
 # Documentation
 TODO:
-- [ ] OpenAPI integraion
-- [ ] API integration
-    - [ ] Front
-    - [ ] Back
+- [x] OpenAPI integraion
+- [x] API integration
+    - [x] Front
+    - [x] Back
 - [ ] Turbo test
-- [ ] Tsconfig fix
+- [x] Tsconfig fix
+- [ ] Dotenv
+- [ ] Deploy
+- [] JSON query params for front and back https://ts-rest.com/docs/next#json-query-parameters 
+

@@ -1,5 +1,5 @@
 {
-  "name": "@taskbounty/api",
+  "name": "@taskbounty-app/api",
   "version": "0.1.0",
   "private": true,
   "main": "./index.ts",
@@ -13,9 +13,14 @@
   },
   "dependencies": {
     "@ts-rest/core": "^3.30.5",
+    "@ts-rest/open-api": "^3.30.5",
     "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@taskbounty-app/eslint-config": "workspace:^0.2.0",
+    "@taskbounty-app/prettier-config": "workspace:^0.1.0",
+    "@taskbounty-app/tsconfig": "workspace:^0.1.0",
+    "@types/node": "20.10.0",
     "eslint": "^8.53.0",
     "prettier": "^3.1.0",
     "typescript": "^5.2.2"

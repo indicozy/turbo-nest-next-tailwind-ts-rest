@@ -17,7 +17,7 @@ export const contract = c.router({
     path: '/posts',
     //     ^ Note! This is the full path on the server, not just the sub-path of a route
     responses: {
-      201: c.type<PostSchema>(),
+      201: c.type<z.infer<typeof PostSchema>>(),
     },
     body: z.object({
       title: z.string(),
@@ -32,7 +32,24 @@ export const contract = c.router({
     method: 'GET',
     path: '/posts',
     responses: {
-      200: c.type<{ posts: PostSchema[]; total: number }>(),
+      200: c.type<{ posts: z.infer<typeof PostSchema>[]; total: number }>(),
+    },
+    headers: z.object({
+      pagination: z.string().optional(),
+    }),
+    query: z.object({
+      take: z.string().transform(Number).optional(),
+      skip: z.string().transform(Number).optional(),
+      search: z.string().optional(),
+    }),
+    summary: 'Get all posts',
+    metadata: { role: 'guest' } as const,
+  },
+  getPost: {
+    method: 'GET',
+    path: '/posts',
+    responses: {
+      200: c.type<{ posts: z.infer<typeof PostSchema>[]; total: number }>(),
     },
     headers: z.object({
       pagination: z.string().optional(),

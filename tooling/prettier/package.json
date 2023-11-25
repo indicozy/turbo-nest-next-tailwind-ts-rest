@@ -17,5 +17,11 @@
     "@taskbounty-app/tsconfig": "workspace:^0.1.0",
     "typescript": "^5.2.2"
   },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@taskbounty-app/eslint-config/base"
+    ]
+  },
   "prettier": "@taskbounty-app/prettier-config"
 }

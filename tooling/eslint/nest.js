@@ -10,6 +10,11 @@ const config = {
     sourceType: "module",
     ecmaVersion: "es2019",
   },
+  rules: [
+    {
+      "@typescript-eslint/require-await": "off",
+    },
+  ],
   plugins: ["@darraghor/nestjs-typed"],
 };
 
