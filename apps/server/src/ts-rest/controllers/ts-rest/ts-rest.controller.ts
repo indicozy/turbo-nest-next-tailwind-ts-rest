@@ -5,7 +5,7 @@ import { TsRestHandler, tsRestHandler } from "@ts-rest/nest";
 import { contract as c } from "@taskbounty-app/api/contract";
 
 @Controller("notes")
-export class NoteController {
+export class TsRestController {
   constructor(private readonly service: TsRestService) {}
 
   @TsRestHandler(c.getPosts)

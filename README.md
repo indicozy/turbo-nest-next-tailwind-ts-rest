@@ -21,6 +21,7 @@ TODO:
 ## For future release
 - [ ] Multiple domains for ClerK? https://clerk.com/docs/advanced-usage/satellite-domains
 - [ ] For future release: megarepo?
+- [ ] NestJS Clerk middleware
 
 
 # What's included

@@ -20,6 +20,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
+    "@clerk/clerk-sdk-node": "^4.12.22",
     "@nestjs/common": "^10.0.0",
     "@nestjs/config": "^3.1.1",
     "@nestjs/core": "^10.0.0",
@@ -30,6 +31,7 @@
     "@taskbounty-app/api": "workspace:^0.1.0",
     "@taskbounty-app/db": "workspace:^0.1.0",
     "@ts-rest/nest": "^3.30.5",
+    "@ts-rest/open-api": "^3.30.5",
     "better-sqlite3": "^9.1.1",
     "drizzle-orm": "^0.29.0",
     "mysql2": "^3.6.5",

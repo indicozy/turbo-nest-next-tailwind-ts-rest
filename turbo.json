@@ -13,7 +13,8 @@
         "next-env.d.ts",
         ".expo/**",
         ".output/**",
-        ".vercel/output/**"
+        ".vercel/output/**",
+        "dist/**"
       ]
     },
     "dev": {
@@ -40,11 +41,9 @@
     }
   },
   "globalEnv": [
-    "DATABASE_URL",
-    "AUTH_DISCORD_ID",
-    "AUTH_DISCORD_SECRET",
-    "AUTH_REDIRECT_PROXY_URL",
-    "AUTH_SECRET",
-    "AUTH_URL"
+    "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY",
+    "CLERK_SECRET_KEY",
+    "DATABASE_URL_PROD",
+    "DATABASE_URL_DEV"
   ]
 }

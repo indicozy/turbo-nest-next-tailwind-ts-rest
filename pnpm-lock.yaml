@@ -81,6 +81,9 @@ importers:
 
   apps/server:
     dependencies:
+      '@clerk/clerk-sdk-node':
+        specifier: ^4.12.22
+        version: 4.12.22(react@18.2.0)
       '@nestjs/common':
         specifier: ^10.0.0
         version: 10.2.9(reflect-metadata@0.1.13)(rxjs@7.8.1)
@@ -111,6 +114,9 @@ importers:
       '@ts-rest/nest':
         specifier: ^3.30.5
         version: 3.30.5(@nestjs/common@10.2.9)(@nestjs/core@10.2.9)(@ts-rest/core@3.30.5)(rxjs@7.8.1)(zod@3.22.4)
+      '@ts-rest/open-api':
+        specifier: ^3.30.5
+        version: 3.30.5(@ts-rest/core@3.30.5)(zod@3.22.4)
       better-sqlite3:
         specifier: ^9.1.1
         version: 9.1.1

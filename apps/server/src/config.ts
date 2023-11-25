@@ -1,6 +1,8 @@
 import { registerAs } from "@nestjs/config";
 
+import { env } from "./env.mjs";
+
 export const DbConfig = registerAs("db", () => ({
-  prodBranchUrl: process.env.PROD_BRANCH_URL,
-  devBranchUrl: process.env.DEV_BRANCH_URL,
+  prodBranchUrl: env.DATABASE_URL_PROD,
+  devBranchUrl: env.DATABASE_URL_DEV,
 }));
