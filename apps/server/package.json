@@ -24,7 +24,11 @@
     "@nestjs/config": "^3.1.1",
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
+    "@t3-oss/env-core": "^0.7.1",
+    "@taskbounty-app/api": "workspace:^0.1.0",
     "@ts-rest/nest": "^3.30.5",
+    "better-sqlite3": "^9.1.1",
+    "drizzle-orm": "^0.29.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
     "zod": "^3.22.4"
@@ -33,6 +37,9 @@
     "@nestjs/cli": "^10.0.0",
     "@nestjs/schematics": "^10.0.0",
     "@nestjs/testing": "^10.0.0",
+    "@taskbounty-app/eslint-config": "workspace:^0.2.0",
+    "@taskbounty-app/prettier-config": "workspace:^0.1.0",
+    "@taskbounty-app/tsconfig": "workspace:^0.1.0",
     "@types/express": "^4.17.17",
     "@types/jest": "^29.5.2",
     "@types/node": "20.10.0",
@@ -50,10 +57,7 @@
     "ts-loader": "^9.4.3",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.2.2",
-    "@taskbounty-app/tsconfig": "workspace:^0.1.0",
-    "@taskbounty-app/eslint-config": "workspace:^0.2.0",
-    "@taskbounty-app/prettier-config": "workspace:^0.1.0"
+    "typescript": "^5.2.2"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -76,8 +80,7 @@
     "root": true,
     "extends": [
       "@taskbounty-app/eslint-config/base",
-      "@taskbounty-app/eslint-config/nextjs",
-      "@taskbounty-app/eslint-config/react"
+      "@taskbounty-app/eslint-config/nest"
     ]
   },
   "prettier": "@taskbounty-app/prettier-config"
