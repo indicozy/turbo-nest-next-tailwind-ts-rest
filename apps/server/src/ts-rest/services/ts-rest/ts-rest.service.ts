@@ -1,6 +1,5 @@
 import { DB, DbType } from "@/global/providers/db/db";
 import { Inject, Injectable } from "@nestjs/common";
-import { eq } from "drizzle-orm";
 
 import { schema } from "@taskbounty-app/db/index";
 

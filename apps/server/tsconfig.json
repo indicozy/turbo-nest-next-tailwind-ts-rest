@@ -2,13 +2,18 @@
   "extends": "@taskbounty-app/tsconfig/base.json", // Extend the config options from the root
   "compilerOptions": {
     // The following options are not required as they've been moved to the root tsconfig
-    // "baseUrl": "./",
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"],
+      "@taskbounty-app/api/*": ["@taskbounty-app/api/*"],
+      "@taskbounty-app/db/*": ["@taskbounty-app/db/*"]
+    },
     // "emitDecoratorMetadata": true,
-    // "experimentalDecorators": true,
+    "experimentalDecorators": true,
     // "incremental": true,
-    // "skipLibCheck": true,
+    "skipLibCheck": true,
     // "strictNullChecks": true,
-    // "noImplicitAny": true,
+    "noImplicitAny": true,
     // "strictBindCallApply": true,
     // "forceConsistentCasingInFileNames": true,
     // "noFallthroughCasesInSwitch": true
@@ -19,8 +24,9 @@
     "target": "es2017",
     "sourceMap": true,
     "outDir": "./dist",
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  }
+    "noEmit": false, // <- remove this or set to false
+    "incremental": false, // <- remove this or set to false
+    "types": []
+  },
+  "exclude": ["node_modules", "test", "dist", "**/*spec.ts"]
 }

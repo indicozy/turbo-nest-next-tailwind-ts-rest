@@ -6,9 +6,9 @@ TODO:
 - [x] API integration
     - [x] Front
     - [x] Back
-- [ ] Turbo test
+- [x] Turbo test
 - [x] Tsconfig fix
-- [ ] Dotenv
+- [x] Dotenv
 - [ ] Deploy
 - [] JSON query params for front and back https://ts-rest.com/docs/next#json-query-parameters 
 - [ ] Update all packages

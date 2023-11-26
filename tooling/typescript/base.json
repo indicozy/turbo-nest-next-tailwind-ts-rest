@@ -17,6 +17,5 @@
     "incremental": true,
     "noUncheckedIndexedAccess": true,
     "experimentalDecorators": true
-  },
-  "exclude": ["node_modules", "build", "dist", ".next", ".expo"]
+  }
 }
