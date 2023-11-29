@@ -6,7 +6,8 @@
   "types": "./index.ts",
   "license": "MIT",
   "scripts": {
-    "clean": "rm -rf .turbo node_modules",
+    "build": "tsc --outDir dist -p tsconfig.json",
+    "clean": "rm -rf .turbo node_modules dist",
     "lint": "eslint .",
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "push": "drizzle-kit push:mysql",
@@ -17,7 +18,7 @@
     "@paralleldrive/cuid2": "^2.2.2",
     "@planetscale/database": "^1.11.0",
     "dotenv": "^16.3.1",
-    "drizzle-orm": "^0.29.0"
+    "drizzle-orm": "^0.28.6"
   },
   "devDependencies": {
     "@taskbounty-app/eslint-config": "workspace:^0.2.0",

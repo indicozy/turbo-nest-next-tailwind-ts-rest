@@ -2,7 +2,8 @@
   "extends": "@taskbounty-app/tsconfig/base.json",
   "compilerOptions": {
     "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json",
+    "outDir": "./dist",
   },
   "include": ["."],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules" ,"package.json", "tsconfig.json"]
 }

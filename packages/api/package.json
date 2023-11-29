@@ -6,7 +6,8 @@
   "types": "./index.ts",
   "license": "MIT",
   "scripts": {
-    "clean": "rm -rf .turbo node_modules",
+    "build": "tsc --outDir dist -p tsconfig.json",
+    "clean": "rm -rf .turbo node_modules dist",
     "lint": "eslint .",
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "typecheck": "tsc --noEmit"
