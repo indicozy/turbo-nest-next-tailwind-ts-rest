@@ -5,9 +5,10 @@
     "baseUrl": "./src",
     "paths": {
       "@/*": ["./*"],
-      "@taskbounty-app/api/*": ["@taskbounty-app/api/*"],
-      "@taskbounty-app/db/*": ["@taskbounty-app/db/*"]
+      "@taskbounty-app/api/*": ["@taskbounty-app/api/dist/*"],
+      "@taskbounty-app/db/*": ["@taskbounty-app/db/dist/*"]
     },
+
     // "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     // "incremental": true,

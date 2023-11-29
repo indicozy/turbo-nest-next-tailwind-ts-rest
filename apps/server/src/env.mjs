@@ -3,8 +3,7 @@ import { z } from "zod";
 
 export const env = createEnv({
   server: {
-    DATABASE_URL_PROD: z.string().url(),
-    DATABASE_URL_DEV: z.string().url(),
+    DATABASE_URL: z.string().url(),
   },
   runtimeEnv: process.env,
 });

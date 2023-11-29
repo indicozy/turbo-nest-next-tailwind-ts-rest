@@ -33,11 +33,12 @@
     "@taskbounty-app/db": "workspace:^0.1.0",
     "@ts-rest/nest": "^3.30.5",
     "@ts-rest/open-api": "^3.30.5",
-    "better-sqlite3": "^9.1.1",
-    "drizzle-orm": "^0.29.0",
+    "concurrently": "^8.2.2",
+    "drizzle-orm": "^0.28.6",
     "mysql2": "^3.6.5",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1",
+    "tsc-alias": "^1.8.8",
     "zod": "^3.22.4"
   },
   "devDependencies": {
